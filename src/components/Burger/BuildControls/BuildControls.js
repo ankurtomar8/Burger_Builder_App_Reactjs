@@ -22,7 +22,8 @@ const buildControls = (props) =>(
             disabled = {props.disabled[ctrl.type]}/>  // disabling button when they are not in use
          ))}
         <button className={classes.OrderButton} 
-                  disabled = {!props.purchaseable}>ORDER NOW</button>
+                  disabled = {!props.purchaseable}
+                  onClick = {props.ordered}>ORDER NOW</button>
      </div>
 ); 
 
